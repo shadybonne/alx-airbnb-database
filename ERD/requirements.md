@@ -1,3 +1,4 @@
+```bash
 
 Table users {
   user_id uuid [primary key]
