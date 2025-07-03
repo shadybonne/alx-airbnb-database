@@ -1,5 +1,9 @@
 ---sql
 
+-- ORDER BY
+
+-- LEFT JOIN: Retrieve all properties with their reviews (including properties without reviews)
+
 SELECT 
     Booking.booking_id,
     Booking.start_date,
@@ -13,6 +17,7 @@ SELECT
 FROM Booking
 INNER JOIN User ON Booking.user_id = User.user_id;
 
+-- LEFT JOIN: Retrieve all properties with their reviews (including properties without reviews)
 
 SELECT 
     Property.property_id,
