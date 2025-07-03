@@ -1,3 +1,5 @@
+-- WHERE AND
+
 SELECT 
     b.booking_id,
     b.start_date,
@@ -32,3 +34,6 @@ LEFT JOIN Payment pay ON b.booking_id = pay.booking_id
 
 ORDER BY b.created_at DESC;
 
+-- Performance Analysis
+-- Use EXPLAIN ANALYZE to compare query performance
+EXPLAIN ANALYZE SELECT * FROM bookings;
